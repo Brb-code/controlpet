@@ -1,0 +1,36 @@
+<h1 mat-dialog-title>Registro de mascotas</h1>
+<div mat-dialog-content fxLayout='row' fxLayout.xs='column'>
+    <div fxFlex='40' fxFlex.xs='100'>
+        <img [src]="imagen" alt="Imagen" class="full-width" (click)='cargarImagen()' *ngIf='imagen!=""'>
+        <button *ngIf='imagen==""' mat-raised-button (click)='cargarImagen()' color='primary'><mat-icon>upload</mat-icon> Cargar imagen</button>
+        <input type="file" id='imagenF' (change)='loadImg($event)' style="display: none;">
+    </div>
+    <div fxFlex='60' fxFlex.xs='100'>
+        <form role="form" (submit)='guardar($event)'>
+            <mat-form-field>
+                <mat-label>Nombre</mat-label>
+                <input type="text" matInput>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Fecha de nacimiento</mat-label>
+                <input type="date" matInput>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Raza</mat-label>
+                <input type="text" matInput>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Sexo</mat-label>
+                <input type="text" matInput>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Detalle</mat-label>
+                <textarea type="text" matInput></textarea>
+            </mat-form-field>
+            <br>
+            <button mat-dialog-close mat-button color='accent'>Cerrar</button>
+            <button type="submit" mat-raised-button color='primary'>Guardar</button>
+        </form>
+        
+    </div>
+</div>

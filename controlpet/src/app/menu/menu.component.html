@@ -1,0 +1,10 @@
+<mat-toolbar color='primary'>
+    <span><mat-icon>pets</mat-icon> Control Pet</span>
+    <span class="spacer"></span>
+    <button mat-button [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item [routerLink]="['/pet']">Mis mascotas</button>
+        <button mat-menu-item [routerLink]="['/vet']">Veterinarias</button>
+        <button mat-menu-item (click)='salir()'>Salir</button>
+    </mat-menu>
+</mat-toolbar>
