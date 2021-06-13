@@ -1,0 +1,16 @@
+<p>veterinario works!</p>
+<h2>{{nombre | uppercase}}</h2>
+<h3>{{hoy |date:'short'}}</h3>
+
+<h1>formulario</h1>
+<form action="" role="form" (submit)='guardar($event)'>
+    <mat-form-field >
+        <mat-label>Nombre</mat-label>
+        <input matInput placeholder="Ex. Pizza" type="text" required [(ngModel)]='nombre' name="nombre">
+    </mat-form-field>
+    <button mat-raised-button type="submit">Guardar</button>
+</form>
+
+<p *ngFor='let personaje of lista'>
+    {{personaje.name}}
+</p>

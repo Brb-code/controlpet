@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   constructor() { 
-    let k = sessionStorage.getItem('tk')
-    if(k) location.href='pet'
+    //let k = sessionStorage.getItem('tk')
+    //if(k) location.href='pet'
   }
 
   ngOnInit(): void {

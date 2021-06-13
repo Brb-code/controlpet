@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { FormpetComponent } from '../formpet/formpet.component';
+import { FormpetComponent } from './../formpet/formpet.component';
 
 @Component({
   selector: 'app-listpets',
