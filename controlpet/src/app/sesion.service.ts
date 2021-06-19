@@ -8,6 +8,6 @@ export class SesionService {
   constructor() { }
   inicioSesion(tk:string){
     sessionStorage.setItem('CONTROLPET_tk', tk);
-    location.href='veterinario'
+    location.href='mascota'
   }
 }

@@ -13,6 +13,6 @@ export class MenuComponent implements OnInit {
   }
   salir(){
     sessionStorage.removeItem('tk')
-    location.href='home'
+    location.href='inicio'
   }
 }

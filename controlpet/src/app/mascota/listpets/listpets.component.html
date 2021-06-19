@@ -1,8 +1,8 @@
-<app-menu></app-menu>
 
-<h1>Mis Mascotas</h1>
+
+<h1>Mis Mascotas</h1><button mat-mini-fab color='primary' (click)='add()'><mat-icon>add</mat-icon></button>
 <hr>
-<button mat-mini-fab color='primary' class="bottom_right" (click)='add()'><mat-icon>add</mat-icon></button>
+
 <div fxLayout="row" *ngIf='pets.length==0' class="centro">
     <div fxFlex='25%' fxFlex.sm='30' fxHide.xs></div>
     <div fxFlex='50%' fxFlex.sm='40' fxFlex.xs='100'>
@@ -10,4 +10,13 @@
         <h2>Aun no tienes mascotas registradas...</h2>
     </div>
     <div fxFlex='25%' fxFlex.sm='30' fxHide.xs></div>
+</div>
+<div>
+    <mat-list>
+        <mat-list-item>
+            <mat-icon mat-list-icon>pet</mat-icon>
+            <div mat-line>Nombre</div>
+            <div mat-line>Descripcion</div>
+        </mat-list-item>
+    </mat-list>
 </div>

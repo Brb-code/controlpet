@@ -6,11 +6,14 @@ import { InicioComponent } from './inicio.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
-    InicioComponent
+    InicioComponent,
+    MenuComponent
   ],
   imports: [
     CommonModule,
@@ -18,7 +21,11 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatMenuModule
+  ],
+  exports:[
+    MenuComponent
   ]
 })
 export class InicioModule { }

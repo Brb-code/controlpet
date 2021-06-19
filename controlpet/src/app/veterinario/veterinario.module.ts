@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms'
 
 import { MatInputModule } from '@angular/material/input'
 import { MatButtonModule } from '@angular/material/button'
+import { InicioModule } from '../inicio/inicio.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { MatButtonModule } from '@angular/material/button'
     VeterinarioRoutingModule,
     MatInputModule,
     MatButtonModule,
-    FormsModule
+    FormsModule,
+    InicioModule
   ]
 })
 export class VeterinarioModule { }
